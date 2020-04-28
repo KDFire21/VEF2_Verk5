@@ -62,7 +62,8 @@ header {
 }
 
 .boop {
-  border: 0.6px dashed grey;
+  
+  overflow: hidden;
 }
 
 .bruh {
@@ -71,6 +72,27 @@ header {
   padding-left: 20px;
   padding-right: 15px;
   padding-top: 10px;
+  position: relative;
+  left: -380;
+  animation: textihreyfist;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes textihreyfist {
+  from {left: -380;}
+  to {left: 480;}
+}
+
+.cat{
+  animation: myndStaekkar;
+  animation-duration: 5s;
+}
+
+@keyframes myndStaekkar {
+  0% {transform: scale(0);}
+  100% {transform: scale(1);}
 }
 
 .card {
